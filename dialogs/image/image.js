@@ -866,7 +866,7 @@
                         start: this.listIndex,
                         size: this.listSize
                     }, editor.queryCommandValue('serverparam')),
-                    'method': 'get',
+                    'method': 'post',
                     'onsuccess': function (r) {
                         try {
                             var json = isJsonp ? r:eval('(' + r.responseText + ')');
